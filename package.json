@@ -1,0 +1,20 @@
+{
+  "name": "react-native-hide-with-keyboard",
+  "version": "0.1.0",
+  "description": "Hide components when keyboard is shown",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamlab/react-native-hide-with-keyboard.git"
+  },
+  "keywords": [
+    "react-native",
+    "keyboard"
+  ],
+  "author": "Almouro <alexandre@bam.tech> (blog.bam.tech)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bamlab/react-native-hide-with-keyboard/issues"
+  },
+  "homepage": "https://github.com/bamlab/react-native-hide-with-keyboard#readme"
+}

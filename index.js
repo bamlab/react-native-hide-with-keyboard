@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { DeviceEventEmitter, Platform, View } from 'react-native';
+import { Keyboard, Platform, View } from 'react-native';
 
 class HideWithKeyboard extends Component {
   constructor(props) {
@@ -11,12 +11,12 @@ class HideWithKeyboard extends Component {
 
   componentWillMount() {
     this._keyboardDidShowListener =
-      DeviceEventEmitter.addListener(
+      Keyboard.addListener(
         Platform.OS === 'android' ? 'keyboardDidShow' : 'keyboardWillShow',
         this.keyboardDidShow.bind(this)
       );
     this._keyboardDidHideListener =
-      DeviceEventEmitter.addListener(
+      Keyboard.addListener(
         Platform.OS === 'android' ? 'keyboardDidHide' : 'keyboardWillHide',
         this.keyboardDidHide.bind(this)
       );

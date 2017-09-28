@@ -11,7 +11,7 @@ npm install -S react-native-hide-with-keyboard
 ```
 
 ## Use it
-```
+```javascript
 import HideWithKeyboard from 'react-native-hide-with-keyboard';
 
 ...

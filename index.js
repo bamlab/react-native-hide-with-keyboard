@@ -73,5 +73,5 @@ class ShowWithKeyboard extends HideWithKeyboard {
     );
   }
 }
-export default { HideWithKeyboard, ShowWithKeyboard };
+export { HideWithKeyboard, ShowWithKeyboard };
 export default HideWithKeyboard;

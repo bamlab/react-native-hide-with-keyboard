@@ -27,3 +27,9 @@ render() {
     )
 }
 ```
+
+### _Show_ components when keyboard is shown
+In the case that you want to do the opposite, there is also `ShowWithKeyboard` which only shows a component when the keyboard is displayed. To use this, instead import `react-native-hide-with-keyboard` like so:
+```javascript
+import { HideWithKeyboard, ShowWithKeyboard } from 'react-native-hide-with-keyboard';
+```

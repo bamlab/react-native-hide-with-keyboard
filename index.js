@@ -60,4 +60,18 @@ HideWithKeyboard.propTypes = {
   ]),
 };
 
+class ShowWithKeyboard extends HideWithKeyboard {
+  render() {
+    if (!this.state.keyboardUp) {
+      return (<View />);
+    }
+
+    return (
+      <View>
+        {this.props.children}
+      </View>
+    );
+  }
+}
+export { HideWithKeyboard, ShowWithKeyboard };
 export default HideWithKeyboard;

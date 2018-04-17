@@ -1,6 +1,6 @@
 {
   "name": "react-native-hide-with-keyboard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Hide components when keyboard is shown",
   "main": "index.js",
   "type": "index.d.ts",

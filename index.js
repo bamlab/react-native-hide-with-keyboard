@@ -46,7 +46,7 @@ class HideWithKeyboard extends Component {
     }
 
     return (
-      <View>
+      <View {...this.props}>
         {this.props.children}
       </View>
     );
@@ -67,7 +67,7 @@ class ShowWithKeyboard extends HideWithKeyboard {
     }
 
     return (
-      <View>
+      <View {...this.props}>
         {this.props.children}
       </View>
     );

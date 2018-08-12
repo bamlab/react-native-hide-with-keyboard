@@ -1,12 +1,12 @@
 {
   "name": "react-native-hide-with-keyboard",
-  "version": "1.1.1",
+  "version": "0.0.0-managed-by-semantic-release",
   "description": "Hide components when keyboard is shown",
   "main": "index.js",
   "type": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bamlab/react-native-hide-with-keyboard.git"
+    "url": "https://github.com/bamlab/react-native-hide-with-keyboard.git"
   },
   "keywords": [
     "react-native",
@@ -19,6 +19,24 @@
   },
   "homepage": "https://github.com/bamlab/react-native-hide-with-keyboard#readme",
   "devDependencies": {
-    "@types/react": "*"
+    "@types/react": "*",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "semantic-release": "^15.9.8",
+    "travis-deploy-once": "^5.0.2",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "commitmsg": "validate-commit-msg",
+    "commit": "git-cz",
+    "test": "echo 'No tests'"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

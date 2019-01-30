@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Keyboard, Platform, View } from 'react-native';
+import { Keyboard, Platform } from 'react-native';
 
 class HideWithKeyboard extends Component {
   constructor(props) {
@@ -42,13 +42,13 @@ class HideWithKeyboard extends Component {
 
   render() {
     if (this.state.keyboardUp) {
-      return (<View />);
+      return (<Fragment />);
     }
 
     return (
-      <View {...this.props}>
+      <Fragment {...this.props}>
         {this.props.children}
-      </View>
+      </Fragment>
     );
   }
 }
@@ -63,13 +63,13 @@ HideWithKeyboard.propTypes = {
 class ShowWithKeyboard extends HideWithKeyboard {
   render() {
     if (!this.state.keyboardUp) {
-      return (<View />);
+      return (<Fragment />);
     }
 
     return (
-      <View {...this.props}>
+      <Fragment {...this.props}>
         {this.props.children}
-      </View>
+      </Fragment>
     );
   }
 }

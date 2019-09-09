@@ -10,7 +10,7 @@ class HideWithKeyboard extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this._keyboardDidShowListener =
       Keyboard.addListener(
         Platform.OS === 'android' ? 'keyboardDidShow' : 'keyboardWillShow',
